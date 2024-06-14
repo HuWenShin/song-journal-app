@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .question {
-    margin-top: 5%;
     text-align: center;
     padding: 2rem 3rem;
     background-color: #FEF3E2;
@@ -37,8 +37,12 @@
 
 .formGroup {
     margin-top: 0.5rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
-
+ 
 .button {
     background-color: #F27141;
     color: white;
@@ -47,8 +51,21 @@
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
 
 .button:hover {
     background-color: #FFAB7B;
+}
+
+.backButton {
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-start;
+    
+}
+
+.button:last-child {
+    margin-left: auto;
+    margin-right: auto;
 }

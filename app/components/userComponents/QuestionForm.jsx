@@ -29,10 +29,17 @@ export default function QuestionForm(props) {
             />
           </div>
           <div className={styles.formGroup}>
+            {props.number != 1 && (
+                <button className = {styles.backButton}>
+                 <img src="images/back-button.png" alt="go back" border="0" />
+                </button>
+            )}
+
             <button type="submit" className={styles.button}>
               Next
             </button>
           </div>
+          
         </form>
       </div>
     </div>
