@@ -7,31 +7,34 @@ const NavBar = () => {
     <nav className = {styles.navbar}>
 
       <ul>
+      <div className= {styles.logo}>
+       <label>Moodic</label>
+       <img src="/images/logo.png" alt="Logo" />
+      </div>
+
         <div className= {styles.frontNavs}>
         <li>
-          <Link href="/">
+          <Link href="#">
           Journal
           </Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href="#">
             Playist
           </Link>
         </li>
         <li>
-          <Link href="/about">
+          <Link href="#">
             Profile
           </Link>
         </li>
         </div>
 
-      <div className= {styles.logo}>
-       <img src="/images/logo.png" alt="Logo" />
-      </div>
+      
 
       <div className = {styles.signIn}>
         <li>
-          <Link href="/about">
+          <Link href="#">
             Sign in
           </Link>
         </li>
