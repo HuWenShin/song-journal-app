@@ -1,7 +1,7 @@
 .navbar {
     background-color: #F2C2CF;
     color: white;
-    padding: 0.5rem 5rem;
+    padding: 0.2rem 5rem;
     width: 100%; 
     height: 100%; 
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 .navbar ul {
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     align-items: center;
 }
 
@@ -23,6 +23,8 @@
     width: 8%;
     height: 8%; 
     justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .frontNavs {
@@ -30,11 +32,11 @@
 }
 
 .frontNavs li {
-    margin: 0 1rem; 
+    /* margin: 0 1rem;  */
 }
 
 .signIn{
-    margin: 0 5rem;  
+    /* margin: 0 5rem;   */
 }
 
 .navbar li:hover {
