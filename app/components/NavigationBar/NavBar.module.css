@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #F2C2CF;
+    background-color: #586BA6; /* dark blue */
+    /* background-color: #F2C2CF; pink */
     color: white;
     padding: 0.2rem 5rem;
     width: 100%; 
@@ -20,8 +21,8 @@
 }
 
 .logo {
-    width: 8%;
-    height: 8%; 
+    width: 5%;
+    height: 5%; 
     justify-content: center;
     display: flex;
     align-items: center;
@@ -31,13 +32,6 @@
     display: flex; 
 }
 
-.frontNavs li {
-    /* margin: 0 1rem;  */
-}
-
-.signIn{
-    /* margin: 0 5rem;   */
-}
 
 .navbar li:hover {
     background-color: rgba(250, 231, 243, 0.5);;
