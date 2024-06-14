@@ -9,7 +9,7 @@
     margin-top: 5%;
     text-align: center;
     padding: 2rem 3rem;
-    background-color: #F2C2CF;
+    background-color: #FEF3E2;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -32,6 +32,7 @@
     margin-bottom: 1rem;
     resize: vertical;
     box-sizing: border-box; 
+    border-width: 0.2rem;
 }
 
 .formGroup {
