@@ -11,6 +11,11 @@ export default function Home() {
     setCurrentQuestionNumber(number + 1);
   };
 
+  const handleButtonClick = (number) => {
+    // probably have to save the data later on when connecting the data with backend
+    setCurrentQuestionNumber(number - 1);
+  };
+
   return (
     <main className="min-h-screen"> 
       <div className={styles.container}>
@@ -20,35 +25,39 @@ export default function Home() {
             <QuestionForm
               number="1"
               question="Describe Your Day"
-              onSubmit={() => handleFormSubmit(1)} 
+              onNext={() => handleFormSubmit(1)} 
             />
           )}
           {currentQuestionNumber === 2 && (
             <QuestionForm
               number="2"
               question="How are you feeling right now?"
-              onSubmit={() => handleFormSubmit(2)}
+              onNext={() => handleFormSubmit(2)}
+              onClick={() => handleButtonClick(2)} 
             />
           )}
            {currentQuestionNumber === 3 && (
             <QuestionForm
               number="3"
               question="What made you feel that way?"
-              onSubmit={() => handleFormSubmit(3)}
+              onNext={() => handleFormSubmit(3)}
+              onClick={() => handleButtonClick(3)} 
             />
           )}
            {currentQuestionNumber === 4 && (
             <QuestionForm
               number="4"
               question={<>What did you learn today,<br />whether about yourself or the world around you?</>}
-              onSubmit={() => handleFormSubmit(4)}
+              onNext={() => handleFormSubmit(4)}
+              onClick={() => handleButtonClick(4)} 
             />
           )}
             {currentQuestionNumber === 5 && (
             <QuestionForm
               number="5"
               question={<>What is one thing you can do today <br /> to get closer to your goal?</>}
-              onSubmit={() => handleFormSubmit(0)}
+              // onSubmit={() => handleFormSubmit(0)}
+              onClick={() => handleButtonClick(5)} 
             />
           )}
         </div>
