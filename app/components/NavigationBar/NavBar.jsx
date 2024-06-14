@@ -1,6 +1,6 @@
-// components/NavBar.js
 import Link from 'next/link';
 import styles from './NavBar.module.css'
+
 
 const NavBar = () => {
   return (
@@ -14,7 +14,7 @@ const NavBar = () => {
 
         <div className= {styles.frontNavs}>
         <li>
-          <Link href="#">
+          <Link href="">
           Journal
           </Link>
         </li>
