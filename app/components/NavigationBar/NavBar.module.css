@@ -1,6 +1,13 @@
 .navbar {
-    background-color: #586BA6; /* dark blue */
+    background-color: #F27141; /* dark blue */
     /* background-color: #F2C2CF; pink */
+    /* F2C2CF - pink 
+F1F2D5 - white
+F2BE5C - yellow
+F29057 - Lighter orange
+F27141 - darkest  */
+
+
     color: white;
     padding: 0.2rem 5rem;
     width: 100%; 
