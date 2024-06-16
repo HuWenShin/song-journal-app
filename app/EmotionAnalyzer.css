@@ -1,0 +1,14 @@
+.text-box {
+    color: black;
+    padding: 10px;
+  }
+
+.submit-button {
+    background-color: grey;
+    padding: 10px;
+}
+
+.submit-button:active {
+    background-color:aquamarine;
+    transform: translateY(4px);
+}

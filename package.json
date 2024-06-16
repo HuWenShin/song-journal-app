@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "next": "14.2.3",
-    "nlpcloud": "^2.0.5",
     "react": "^18",
     "react-dom": "^18"
   },
