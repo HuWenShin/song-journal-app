@@ -4,7 +4,7 @@ import "./EmotionAnalyzer.css";
 
 function EmotionAnalyzer() {
   const TONE_API_KEY = process.env.NEXT_PUBLIC_TONE_API_KEY;
-  const [analysis, setAnalysis] = useState("");
+  const [analysis, setAnalysis] = useState([]);
   const [text, setText] = useState("");
 
   const EMOTIONS = {
@@ -35,8 +35,16 @@ function EmotionAnalyzer() {
     e.preventDefault();
     query({ inputs: text }).then((response) => {
       console.log(JSON.stringify(response));
-      setAnalysis(JSON.stringify(response));
+      console.log(response[0][0].label);
+      setAnalysis(response);
     });
+  }
+
+  function displayAnalysis() {
+    return analysis.length
+      ? `${analysis[0][0].label}, ${analysis[0][1].label},
+    ${analysis[0][2].label}`
+      : "N/A";
   }
 
   return (
@@ -54,7 +62,7 @@ function EmotionAnalyzer() {
       <button className="submit-button" type="submit">
         Analyze
       </button>
-      <h1> Detected emotion: {analysis} </h1>
+      <h1>Top 3 detected emotions: {displayAnalysis()}</h1>
     </form>
   );
 }
